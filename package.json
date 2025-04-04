@@ -1,0 +1,38 @@
+{
+  "name": "katex-vue",
+  "version": "0.0.1",
+  "main": "./dist/katexVue.umd.js",
+  "module": "./dist/katexVue.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "style": "./dist/katex-vue.css",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/katexVue.es.js",
+      "require": "./dist/katexVue.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "infoc",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.5",
+    "vite-plugin-dts": "^4.5.3",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.8"
+  },
+  "dependencies": {
+    "katex": "^0.16.21"
+  }
+}
