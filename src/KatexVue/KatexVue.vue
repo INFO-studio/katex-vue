@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import katex, {KatexOptions} from "katex";
+import {renderToString, KatexOptions} from "katex";
 import {computed, inject, onMounted, ref} from "vue";
-import 'katex/dist/katex.min.css'
+import 'katex/dist/katex.min.css';
 
 const props = defineProps<
     { expression: string } & Partial<KatexOptions>
@@ -11,7 +11,7 @@ const globalConfig = inject("katex-vue-config", {}) as KatexOptions
 
 const defaultOptions: KatexOptions = {
   displayMode: false,
-  output: "mathml",
+  output: undefined,
   leqno: false,
   fleqn: false,
   throwOnError: false,
@@ -44,7 +44,7 @@ const mergedOptions = computed(() => ({
 }))
 console.log(props.output, globalConfig.output, defaultOptions.output)
 const renderedExpression = computed(() => {
-  return katex.renderToString(props.expression, {
+  return renderToString(props.expression, {
     ...mergedOptions.value,
   })
 })

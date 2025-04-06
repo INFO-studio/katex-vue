@@ -28,5 +28,10 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+*.tgz
 
 *.tsbuildinfo
+
+# Vitepress
+docs/.vitepress/dist
+docs/.vitepress/cache

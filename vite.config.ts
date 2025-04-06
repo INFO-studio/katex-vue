@@ -21,7 +21,7 @@ export default defineConfig({
             formats: ['es', 'cjs', 'umd']
         },
         rollupOptions: {
-            external: ['vue'],
+            external: ['vue', 'katex', 'katex/dist/katex.min.css'],
             output: {
                 globals: {
                     vue: 'Vue'

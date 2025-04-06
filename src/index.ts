@@ -1,5 +1,5 @@
 import {App, Plugin} from 'vue'
-import {KatexVuePlugin} from './KatexVue'
+import {KatexVuePlugin} from '@/KatexVue'
 
 const plugin: Plugin = {
     install(app: App, options?: any) {
@@ -8,4 +8,4 @@ const plugin: Plugin = {
 }
 
 export {plugin as default}
-export * from './KatexVue'
+export * from '@/KatexVue'
