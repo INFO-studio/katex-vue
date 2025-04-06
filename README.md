@@ -11,6 +11,32 @@ A Vue component for LaTeX expression rendering using KaTeX.
 
 ## Usage
 
+### Installation
+
+Using npm
+
+```sh [npm]
+$ npm add -D katex katex-vue
+```
+
+Using pnpm
+
+```sh [pnpm]
+$ pnpm add -D katex katex-vue
+```
+
+Using yarn
+
+```sh [yarn]
+$ yarn add -D katex katex-vue
+```
+
+Using bun
+
+```sh [bun]
+$ bun add -D katex katex-vue
+```
+
 ### Global Registration
 
 ```js
@@ -29,6 +55,7 @@ app.use(KatexVue, {
 
 ```vue
 <script setup>
+  import { KatexVue } from 'katex-vue'
   const expression = "\\int_0^\\infty x^2 \\mathrm{d} x"
 </script>
 
