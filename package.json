@@ -17,6 +17,7 @@
   "bugs": {
     "url": "https://github.com/INFO-studio/katex-vue/issues"
   },
+  "homepage": "https://katex-vue.vercel.app/",
   "main": "./dist/katexVue.umd.js",
   "module": "./dist/katexVue.es.js",
   "types": "./dist/index.d.ts",

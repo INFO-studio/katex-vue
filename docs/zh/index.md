@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /get-started
+      link: /zh/get-started
     - theme: alt
       text: 配置项
-      link: /configuration
+      link: /zh/configuration
 
 features:
   - title: Configurable global defaults
