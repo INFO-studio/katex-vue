@@ -1,4 +1,3 @@
 import {KatexOptions} from "katex";
 
-export type KatexVueGlobalProps = {
-} & KatexOptions
+export type KatexVueGlobalProps = {} & KatexOptions

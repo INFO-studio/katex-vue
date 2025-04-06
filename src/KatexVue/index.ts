@@ -1,6 +1,6 @@
 import { App, Plugin } from 'vue'
-import KatexVue from '@/KatexVue/KatexVue.vue'
-import {KatexVueGlobalProps} from '@/KatexVue/types';
+import KatexVue from './KatexVue.vue'
+import {KatexVueGlobalProps} from './types';
 
 export const KatexVuePlugin: Plugin = {
     install(app: App, options?: KatexVueGlobalProps) {

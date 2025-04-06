@@ -56,7 +56,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <span v-if="isMounted" v-html="renderedExpression" />
+  <span v-if="isMounted" v-html="renderedExpression"/>
 </template>
 
 <style scoped></style>
