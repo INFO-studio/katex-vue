@@ -1,6 +1,7 @@
 # Katex-vue
 
 A Vue component for LaTeX expression rendering using KaTeX.
+More information in [Katex Vue](https://katex-vue.info-c.cn)
 
 ## Features
 
@@ -54,37 +55,42 @@ app.use(KatexVue, {
 ## Component Usage
 
 ```vue
+
 <script setup>
-  import { KatexVue } from 'katex-vue'
+  import {KatexVue} from 'katex-vue'
+
   const expression = "\\int_0^\\infty x^2 \\mathrm{d} x"
 </script>
 
 <template>
-  <katex-vue :expression="expression" displayMode />
+  <katex-vue :expression="expression" displayMode/>
 </template>
 ```
 
 ## Configuration Options
 
-|        Prop        | Type                                                   |   Default   |
-|:------------------:|--------------------------------------------------------|:-----------:|
-|    `expression`    | String (Required)                                      |      -      |
-|   `displayMode`    | Boolean                                                |   `false`   |
-|      `output`      | `'mathml'` / `'html'` / `'htmlAndMathml'`              | `'mathml'`  |
-|      `leqno`       | Boolean                                                |   `false`   |
-|      `fleqn`       | Boolean                                                |   `false`   |
-|   `throwOnError`   | Boolean                                                |   `false`   |
-|    `errorColor`    | String                                                 | `'#cc0000'` |
-|      `macros`      | Object                                                 |      -      |
-| `minRuleThickness` | Number                                                 |      -      |
-| `colorIsTextColor` | Boolean                                                |   `false`   |
-|     `maxSize`      | Number                                                 |      -      |
-|    `maxExpand`     | Number                                                 |      -      |
-|      `strict`      | Boolean / `'warn'` / `'error'` / `'ignore'` / Function |  `'warn'`   |
-|      `trust`       | Boolean                                                |   `false`   |
-|   `globalGroup`    | Boolean                                                |   `false`   |
+|        Prop        | Type                                                   |      Default      |
+|:------------------:|--------------------------------------------------------|:-----------------:|
+|    `expression`    | String (Required)                                      |         -         |
+|   `displayMode`    | Boolean                                                |      `false`      |
+|      `output`      | `'mathml'` / `'html'` / `'htmlAndMathml'`              | `'htmlAndMathml'` |
+|      `leqno`       | Boolean                                                |      `false`      |
+|      `fleqn`       | Boolean                                                |      `false`      |
+|   `throwOnError`   | Boolean                                                |      `false`      |
+|    `errorColor`    | String                                                 |    `'#cc0000'`    |
+|      `macros`      | Object                                                 |         -         |
+| `minRuleThickness` | Number                                                 |         -         |
+| `colorIsTextColor` | Boolean                                                |      `false`      |
+|     `maxSize`      | Number                                                 |    `Infinity`     |
+|    `maxExpand`     | Number                                                 |      `1000`       |
+|      `strict`      | Boolean / `'warn'` / `'error'` / `'ignore'` / Function |     `'warn'`      |
+|      `trust`       | Boolean                                                |      `false`      |
+|   `globalGroup`    | Boolean                                                |      `false`      |
 
 **Priority**: Component props > Global config > Default values
 
+Check on [KaTeX Document](https://katex.org/docs/options)
+
 ## Licence
+
 MIT © 2025 Infoc

@@ -1,6 +1,6 @@
 {
   "name": "katex-vue",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": "infoc",
   "license": "MIT",
   "description": "LaTeX expression rendering on Vue3",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/INFO-studio/katex-vue/issues"
   },
-  "homepage": "https://katex-vue.vercel.app/",
+  "homepage": "https://katex-vue.info-c.cn/",
   "main": "./dist/katexVue.umd.js",
   "module": "./dist/katexVue.es.js",
   "types": "./dist/index.d.ts",
@@ -42,16 +42,17 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@vitejs/plugin-vue": "^5.2.3",
+    "element-plus": "^2.9.7",
+    "katex": "^0.16.21",
     "typescript": "^5.8.2",
     "vite": "^6.2.5",
     "vite-plugin-dts": "^4.5.3",
     "vitepress": "^1.6.3",
     "vue": "^3.5.13",
-    "vue-tsc": "^2.2.8",
-    "katex": "^0.16.21"
+    "vue-tsc": "^2.2.8"
   },
   "peerDependencies": {
-    "vue": "^3.5.13",
-    "katex": "^0.16.21"
+    "katex": "^0.16.21",
+    "vue": "^3.5.13"
   }
 }

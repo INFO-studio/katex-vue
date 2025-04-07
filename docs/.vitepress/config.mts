@@ -6,7 +6,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Usage', link: '/get-started' }
+      { text: 'Usage', link: '/get-started' },
+      { text: 'Playground', link: '/playground' },
     ],
 
     sidebar: [
@@ -16,7 +17,8 @@ export default defineConfig({
           { text: 'Get Started', link: '/get-started' },
           { text: 'Configuration', link: '/configuration' },
         ]
-      }
+      },
+      { text: 'Playground', link: '/playground' },
     ],
 
     socialLinks: [
@@ -36,7 +38,8 @@ export default defineConfig({
 
         nav: [
           { text: '主页', link: '/zh' },
-          { text: '用法', link: '/zh/get-started' }
+          { text: '用法', link: '/zh/get-started' },
+          { text: '在线尝试', link: '/zh/playground' },
         ],
 
         sidebar: [
@@ -46,7 +49,8 @@ export default defineConfig({
               { text: '快速开始', link: '/zh/get-started' },
               { text: '配置项', link: '/zh/configuration' },
             ]
-          }
+          },
+          { text: '在线尝试', link: '/zh/playground' },
         ],
       }
     }

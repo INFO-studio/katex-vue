@@ -12,11 +12,13 @@
 |      `macros`      | Object                                                 |         -         |
 | `minRuleThickness` | Number                                                 |         -         |
 | `colorIsTextColor` | Boolean                                                |      `false`      |
-|     `maxSize`      | Number                                                 |         -         |
-|    `maxExpand`     | Number                                                 |         -         |
+|     `maxSize`      | Number                                                 |    `Infinity`     |
+|    `maxExpand`     | Number                                                 |      `1000`       |
 |      `strict`      | Boolean / `'warn'` / `'error'` / `'ignore'` / Function |     `'warn'`      |
 |      `trust`       | Boolean                                                |      `false`      |
 |   `globalGroup`    | Boolean                                                |      `false`      |
+
+Check on [KaTeX Document](https://katex.org/docs/options)
 
 ## Set Global Configuration
 

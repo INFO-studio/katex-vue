@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: 配置项
       link: /zh/configuration
+    - theme: alt
+      text: 在线尝试
+      link: /zh/playground
 
 features:
   - title: Configurable global defaults

@@ -12,11 +12,13 @@
 |      `macros`      | Object                                                 |         -         |
 | `minRuleThickness` | Number                                                 |         -         |
 | `colorIsTextColor` | Boolean                                                |      `false`      |
-|     `maxSize`      | Number                                                 |         -         |
-|    `maxExpand`     | Number                                                 |         -         |
+|     `maxSize`      | Number                                                 |    `Infinity`     |
+|    `maxExpand`     | Number                                                 |      `1000`       |
 |      `strict`      | Boolean / `'warn'` / `'error'` / `'ignore'` / Function |     `'warn'`      |
 |      `trust`       | Boolean                                                |      `false`      |
 |   `globalGroup`    | Boolean                                                |      `false`      |
+
+详细请见 [KaTeX 文档](https://katex.org/docs/options)
 
 ## 设置全局配置
 

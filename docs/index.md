@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: Configuration
       link: /configuration
+    - theme: alt
+      text: Playground
+      link: /playground
 
 features:
   - title: Configurable global defaults
